@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://cdn.tailwindcss.com/3.2.0' ></script>
+  <script src="./tailwind.config.js"></script>
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+    <!-- Header-->
+    <nav class="bg-white  fixed top-0 left-0 w-full z-10">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <a class="text-2xl font-bold text-customGray no-underline" href="index.html">Educ-AR</a>
+            
+            <button class="lg:hidden text-white hover:text-gray-300 focus:outline-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ml-2"></i>
+            </button>
+            
+            <div class="hidden lg:flex lg:items-center w-full lg:w-auto" id="navbarResponsive">
+                <ul class="flex flex-col lg:flex-row lg:space-x-4 lg:ml-auto">
+                    <li class="my-1 lg:my-0">
+                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 hover:border-teal-500 text-teal-500 hover:bg-teal-50 transition-colors duration-200" 
+                            href="index.html">Inicio</a>
+                    </li>
+                    <li class="my-1 lg:my-0">
+                        <a class="nav-link text-lg py-2 px-4 rounded-full  border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                            href="modelos.html">Asignaturas</a>
+                    </li>
+                    <li class="my-1 lg:my-0">
+                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200"
+                            href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="my-1 lg:my-0">
+                        <a class="nav-link text-lg py-2 px-4 rounded-full border-2 border-blacknav-24 text-teal-500 hover:border-teal-500 hover:bg-teal-50 transition-colors duration-200 active" 
+                            href="AR/index.html">Escaner</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div
+      class="bg-[#c8e8e8] rounded-[64px] w-[1370px] h-[661px] absolute left-[35px] top-[259px] overflow-hidden"
+    >
+      <div
+        class="w-14 h-14 absolute left-[76px] top-[76px] overflow-hidden"
+      ></div>
+    </div>
+    <img
+      class="w-[234px] h-[248px] absolute left-[215.02px] top-[130px] overflow-visible"
+      style="transform: translate(-147.88px, 48.95px)"
+      src="img/Spiral 1.png"
+    />
+    <img
+      class="h-[auto] absolute left-[1169px] top-[857px] overflow-visible"
+      src="img/group.png"
+    />
+    <div
+      class="text-[#23a4a3] text-center font-['Nunito-SemiBold',_sans-serif] text-5xl leading-[120%] font-semibold absolute left-[calc(50%_-_581px)] top-[485px] w-[1197px] h-[253px]"
+    >
+      Somos estudiantes de la Secundaria de Innovación de la Provincia de
+      Misiones, entusiastas de la tecnología y con grandes ideas para fomentar el
+      uso responsable de los dispositivos inteligentes.
+    </div>
+  </div>
+  
+</body>
+</html>
